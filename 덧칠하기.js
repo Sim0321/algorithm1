@@ -20,6 +20,7 @@ const solution = (n, m, section) => {
 
   section.forEach((v) => {
     if (v > paint) {
+      console.log("paing::", paint);
       paint = v + m - 1;
       answer++;
     }
@@ -28,6 +29,8 @@ const solution = (n, m, section) => {
 };
 
 console.log(solution(8, 4, [2, 3, 6]));
+console.log(solution(5, 4, [1, 3]));
+console.log(solution(4, 1, [1, 2, 3, 4]));
 
 // 해설 및 다른 사람 풀이
 // 순서대로 하나씩 칠하고 칠해진 구역을 확인하는 느낌으로 하면 된다고 한다.
