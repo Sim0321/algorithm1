@@ -18,9 +18,9 @@ const solution = (card1, card2, goal) => {
       idx1++;
     } else if (card2[idx2] === word) {
       idx2++;
-    } else return "NO";
+    } else return "No";
   }
-  return "YES";
+  return "Yes";
 };
 
 console.log(
