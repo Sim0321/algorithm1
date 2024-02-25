@@ -11,12 +11,12 @@ const solution = (nums) => {
         console.log("k ::", nums[k]);
         let sum = nums[i] + nums[j] + nums[k];
         console.log(`${nums[i]} + ${nums[j]} + ${nums[k]}`);
-        if (isPrime(sum)) answer++;
+        if (isPrime(sum)) count++;
       }
     }
   }
   // console.log(arr);
-  // return
+  return count;
 };
 
 function isPrime(sum) {
